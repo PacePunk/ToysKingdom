@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:background="#3F51B5"
+    android:gravity="center"
+    android:orientation="vertical"> <!-- Warna latar soft batik -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="186dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Logo Benang Raja"
+        android:src="@drawable/logo" />
+
+
+</LinearLayout>

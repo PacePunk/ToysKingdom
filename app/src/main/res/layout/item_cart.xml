@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/primary_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@color/surface">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cartItemImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/cartItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="Product Name"/>
+
+            <TextView
+                android:id="@+id/cartItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Rp 1.000.000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDecreaseQty"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/remove_24px"
+                    app:iconTint="@color/surface"
+                    app:cornerRadius="18dp"
+                    android:backgroundTint="@color/primary"
+                    style="@style/Widget.Material3.Button.IconButton"/>
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIncreaseQty"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/add_24px"
+                    app:iconTint="@color/surface"
+                    app:cornerRadius="18dp"
+                    android:backgroundTint="@color/primary"
+                    style="@style/Widget.Material3.Button.IconButton"/>
+
+                <TextView
+                    android:id="@+id/tvSubtotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    tools:text="Rp 1.000.000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/delete_24px"
+            app:iconTint="@color/surface"
+            app:cornerRadius="18dp"
+            android:backgroundTint="@color/primary"
+            style="@style/Widget.Material3.Button.IconButton"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
